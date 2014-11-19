@@ -29,6 +29,8 @@ In your `thumbor.conf`:
 LOADER = 'thumbor_botornado.s3_loader'
 ```
 
+Ensure you have [boto-discoverable AWS credentials][boto-config].
+
 Then just use `bucket-name/object-path` instead of a full URL in Thumbor URLs. To load `images/example.png` from an S3 bucket named `example-assets` without signature or filters etc, the Thumbor URL would be `http://thumbor-hostname.example/unsafe/example-assets/images/example.png`.
 
 
