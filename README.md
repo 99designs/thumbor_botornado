@@ -15,9 +15,17 @@ thumbor_botornado was inspired by [thumbor_aws] which has more configuration opt
 Usage
 -----
 
+Install:
+
+```sh
+pip install https://github.com/99designs/thumbor_botornado/archive/master.tar.gz
+```
+
+You should probably replace `master` with a stable tag or SHA1 from [the releases page](https://github.com/99designs/thumbor_botornado/releases).
+
 In your `thumbor.conf`:
 
-```
+```python
 LOADER = 'thumbor_botornado.s3_loader'
 ```
 
