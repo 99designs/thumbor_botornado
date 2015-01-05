@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eoux pipefail
+
+# Ensure python source files can be compiled.
+find thumbor_botornado/ -name '*.py' | xargs python -m py_compile
