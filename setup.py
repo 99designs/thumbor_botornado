@@ -9,5 +9,9 @@ setup(
     zip_safe = False,
     include_package_data = True,
     packages=find_packages(),
-    install_requires=['thumbor','botornado']
+    install_requires=[
+        'thumbor>=4.0.0,<5.0.0',
+        'tornado>2.3.0,<4.0.0',
+        'botornado==0.0.3',
+    ]
 )
